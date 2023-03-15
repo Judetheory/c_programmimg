@@ -8,17 +8,20 @@ int main()
     printf("Enter a number: ");
     int i, n;
     scanf("%d", &n);
-    printf("The Odd numbers in %d are:", n);
+    printf("The Odd numbers in %d are: ", n);
     int count = 0;
-    printf("The total number of Odd is: %d", count);
+    printf("%d", count);
     for(i =1; i <= n; i++)
     {
         if(i % 2 == 1)
         {
             printf("%d ", i);
             count++;
+    
         }
     }
+    printf("\n");
+    printf("The Total number of Odd is %d. ", count);
     return 0;
             
 }

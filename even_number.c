@@ -8,14 +8,20 @@ int main()
     printf("Enter a number: ");
     int i, n;
     scanf("%d", &n);
-    printf("The Even numbers in %d are:", n);
+    printf("The Even numbers in %d are: ", n);
+    int count = 0;
+    printf("%d", count);
     for(i =1; i <= n; i++)
     {
         if(i % 2 == 0)
         {
             printf("%d ", i);
+            count++;
+    
         }
     }
+    printf("\n");
+    printf("The Total number of even is %d. ", count);
     return 0;
             
 }
